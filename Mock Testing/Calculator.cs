@@ -26,6 +26,8 @@ namespace Unit_Testing
 
         public int Divide(int a, int b)
         {
+            if (b==0)
+                throw new ArgumentException("B cannot be 0");
             return a / b;
         }
     }

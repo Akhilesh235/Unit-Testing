@@ -28,7 +28,24 @@ namespace UnitTestProject1
             int result = calc.Sub(10, 15);
             Assert.AreEqual(result, -5);
 
-        } 
+        }
+
+        [TestMethod]
+        public void TestDivide()
+        {
+            int result = calc.Divide(10, 15);
+            Assert.AreEqual(result, 0);
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestDivideWithZero()
+        {
+            int result = calc.Divide(10, 0);
+            
+
+        }
 
         [TestCleanup]
         public void Cleanup()
