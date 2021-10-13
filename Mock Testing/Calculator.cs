@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Unit_Testing
 {
-    class Calculator
+    public class Calculator
     {
 
         public int Add(int a, int b)
@@ -16,7 +16,7 @@ namespace Unit_Testing
 
         public int Sub(int a, int b)
         {
-            return a * b;
+            return a - b;
         }
 
         public int Multiply(int a, int b)
